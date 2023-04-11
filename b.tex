@@ -1,0 +1,32 @@
+\documentclass[]{article}
+\usepackage{amsmath}
+
+%opening
+\title{}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{A}\label{sec:a}
+\[B\rightarrow A\Leftrightarrow\neg(B\land\neg A)\]
+$A\to(B\rightarrow A)\Leftrightarrow\neg(A\wedge\lnot\neg(B\land\neg A))\Leftrightarrow\neg(A\land\lnot A\wedge B)$
+\[\O\models A\to(B\rightarrow A)\]
+\(A\land A\rightarrow C\Leftrightarrow A\wedge\lnot(A\land\neg C)\Leftrightarrow A\wedge(\neg A\vee C)\Leftrightarrow A\land\neg A\lor A\land C\Leftrightarrow A\wedge C\vdash C\)
+\[A\wedge A\to C\vdash C\]
+\(A\Leftrightarrow A\land(A\rightarrow(B\rightarrow A))\vdash B\to A\)
+\[A\vdash B\to A\]
+$\neg A\to\lnot B\Leftrightarrow\neg(\neg A\wedge B)\Leftrightarrow B\to A$
+\[\lnot A \to \neg B\Leftrightarrow B \rightarrow A\]
+$A\to(B\to C)\Leftrightarrow A\to\neg(B\wedge\neg C)\Leftrightarrow\neg(A\wedge(B\wedge\neg C))\Leftrightarrow\neg A\vee(\neg B\vee C)\Leftrightarrow\neg A\vee\neg B\vee C\newline$
+\((A\to B)\to(A\to C)\Leftrightarrow\lnot(A\land\lnot B)\to\lnot(A\land\lnot C)\Leftrightarrow\lnot(\lnot(A\land\lnot B)\land(A\land\lnot C))\Leftrightarrow(A\land\lnot B)\lor\lnot(A\land\lnot C)\Leftrightarrow(A\land\lnot B)\lor(\lnot A\lor C)\Leftrightarrow\lnot B\lor\lnot A\lor C\)
+\begin{gather*}
+    A\to(B\to C)\Leftrightarrow(A\to B)\to(A\to C)\\
+    P\leftrightarrow Q\Leftrightarrow P\land Q\vee\neg P\wedge\lnot Q\\
+\end{gather*}
+\end{document}
